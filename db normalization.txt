@@ -1,0 +1,6 @@
+Let's say you have a forum database. You have a table of usernames and their various profile info, and a table of forum posts, including name of poster, time posted, the content of the post, and the thread posted in.
+
+A couple issues this could present is if a user wanted to change their username, or if you wanted to search for all posts made by one user.
+If a user changed their name, none of their previous posts would have any connection to them. If someone wanted to search for all posts made by a certain user who's changed their name at any point, some posts will slip through the cracks depending on which name they searched. They could even get posts from multiple people if someone else took up the searched name for a while.
+
+This can be solved by identifying each user not by the name they post with, but by an id number. No matter how a name changes, all posts made by a person will be grouped by that common id, whether you click on their name from a post they've made or search for all posts made by them. Plus, private messaging inboxes can better be implemented.
